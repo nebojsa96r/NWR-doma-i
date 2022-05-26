@@ -1,11 +1,11 @@
 class Phone{
 
     constructor(modelTelefona,trajanjeGarancije,godinaProizvodnje,baterija){
-    this.modelTelefona = modelTelefona
-    this.trajanjeGarancije = trajanjeGarancije
-    this.godinaProizvodnje = godinaProizvodnje
-    this.baterija = baterija
-    this.isTurnOn = false
+        this.modelTelefona = modelTelefona
+        this.trajanjeGarancije = trajanjeGarancije
+        this.godinaProizvodnje = godinaProizvodnje
+        this.baterija = baterija
+        this.isTurnOn = false
     }
 
     
@@ -17,8 +17,8 @@ class Phone{
         console.log('Telefon je uključen')
     }else{
         console.log('Telefon je već uključen.')
+        }
     }
-}
     turnOff(){
         if(this.isTurnOn === false){
             console.log('Telefon već ugašen')
@@ -29,13 +29,13 @@ class Phone{
     }
 
     garancija(){
-        let danas = new Date().getFullYear() - this.godinaProizvodnje
-      if(danas <= this.trajanjeGarancije){
+        let razlika = new Date().getFullYear() - this.godinaProizvodnje
+        if(razlika <= this.trajanjeGarancije){
           console.log('Telefon je u garanciji')
-      }else{
+        }else{
           console.log('Garancija je istekla')
-      }
-}
+        }
+    }
     set setBaterija(stanje){
         this.baterija = stanje
         if(this.baterija === 0){
@@ -45,5 +45,17 @@ class Phone{
 }
 
 let telefon = new Phone('Samsung',2,2020,66)
+
+
+telefon.turnOn()
+telefon.turnOn()
+telefon.setBaterija = 0
+telefon.turnOn()
+telefon.setBaterija = 10
+telefon.turnOn()
+telefon.turnOn()
+telefon.turnOff()
+telefon.turnOff()
+telefon.garancija()
 
 
