@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+
+.controls{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.controls button{
+    width: 60px;
+    height: 30px;
+    border: none;
+    background-color: #000;
+    margin: .2rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+
+
+}
+
+.controls button:hover{
+    background-color: coral;
+}
+
+.my-car{
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: fixed;
+    transform: rotate(180deg);
+    transition: all .5s;
+}
