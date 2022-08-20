@@ -9,10 +9,10 @@ function createItem(array){
         const wordNCyrcle = document.createElement('div')
         item.appendChild(wordNCyrcle)
         wordNCyrcle.classList = 'relative'
-        // Cyrcle
-        const cyrcle = document.createElement('div')
-        cyrcle.classList = 'w-[20px] h-[20px] bg-stone-900 rounded-full border  border-'
-        cyrcle.style.borderColor = array[i].color
+        // Circle
+        const circle = document.createElement('div')
+        circle.classList = 'w-[20px] h-[20px] bg-stone-900 rounded-full border  border-'
+        circle.style.borderColor = array[i].color
         // Line
         if(i < array.length - 1){
             const line = document.createElement('div')
@@ -30,7 +30,7 @@ function createItem(array){
         }
         
         wordNCyrcle.appendChild(word)
-        wordNCyrcle.appendChild(cyrcle)
+        wordNCyrcle.appendChild(circle)
 }}
 
 createItem([{
