@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak-Praksa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #ffffff; 
+        }
+       
+        
+    </style>
+
+</head>
+<body class="h-screen flex justify-center items-center bg-slate-100 ">
+    <div class="h-[650px] w-[560px] bg-white relative">
+        <div id='nav-color' class="w-full h-[100px] bg-blue-900 relative">
+            <a id="back-button" class="flex items-center cursor-pointer pt-1" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                <span class="text-white font-medium ">BACK</span>
+            </a>
+        </div>
+        <img id="img" alt="" class="h-[100px] w-[100px] absolute left-[2rem] top-[3rem] rounded-full border-4 border-white">
+        <span id="character-name" class=" text-white absolute font-bold text-xl left-[9rem] top-[4rem]"></span>
+        <span class="text-xl absolute left-[2rem] top-[10rem] mt-2">Character info</span>
+        <div class="absolute left-[2rem] top-[13rem] text-sm">
+            <div class=" flex flex-row ">
+                <div class="flex flex-col h-[60px] w-[85px] mr-1 mb-1">
+                    <span class="text-slate-400 ">Species</span>
+                    <span id="character-species"></span>
+                </div>
+                <div class="flex flex-col h-[60px] w-[85px] mr-1 mb-1">
+                    <span class=" text-slate-400 ">Origin</span>
+                    <span id="character-origin"></span>
+                </div>
+                <div class="flex flex-col h-[75px] w-[85px] mr-1 mb-1">
+                    <span class="text-slate-400 ">Location</span>
+                    <span id="character-location"></span>
+                </div>
+            </div>
+
+            <div class=" flex flex-row">
+                <div class=" flex flex-col h-[60px] w-[85px] mr-1 mb-1">
+                    <span class="text-slate-400 ">Status</span>
+                    <span id="character-status"></span>
+                </div>
+                <div class="flex flex-col h-[60px] w-[85px] mr-1 mb-1">
+                    <span class=" text-slate-400 ">Gender</span>
+                    <span id="character-gender"></span>
+                </div>
+            </div>
+            
+        
+        </div>
+        <span class="mb-2 text-xl left-[2rem] top-[22rem] absolute">Episodes</span>
+        <div class="absolute h-[220px] w-[350px] left-[2rem] top-[25rem]  flex flex-col overflow-y-scroll "> 
+            <div id="episodes" class="flex flex-col ">
+
+            </div>
+        </div>
+    </div>
+        
+
+    <script src="character.js"></script>
+</body>
+</html>

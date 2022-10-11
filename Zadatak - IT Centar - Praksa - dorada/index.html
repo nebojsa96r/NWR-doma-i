@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak - praksa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0f1175; 
+    }
+    
+</style>
+
+</head>
+<body class="flex items-center justify-center h-screen bg-slate-100">
+    <div class="relative">
+        <div class="h-[150px] w-[560px] bg-white flex justify-center items-center relative">
+            <svg id="search-btn" class='absolute z-10 left-[40px]' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#908a83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input id="input" type="text" placeholder="Search characters..." class=" p-3 pl-9 bg-slate-100 w-[500px]">
+            <span class="absolute left-[2rem] top-[7rem]">Characters</span>
+            
+       </div>
+        <div id="characters-block" class="h-[500px] w-[560px] bg-white overflow-y-scroll ">
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
